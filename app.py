@@ -47,5 +47,5 @@ def error404(error):
     return 'Nothing here, sorry'    
 
 st = ServerState()
-run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), server='waitress' )
 #run(host="192.168.163.177", reloader=True,debug=True, server='waitress')
